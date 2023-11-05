@@ -1,0 +1,48 @@
+{
+  "collectionName": "components_all_leistungs",
+  "info": {
+    "displayName": "Leistung",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Ueberschrift": {
+      "type": "string",
+      "required": true
+    },
+    "Icon": {
+      "type": "component",
+      "repeatable": false,
+      "component": "all.icon",
+      "required": true
+    },
+    "Text": {
+      "type": "text",
+      "required": true
+    },
+    "Untertitel": {
+      "type": "string",
+      "required": false
+    },
+    "TextVorschau": {
+      "type": "text",
+      "required": true
+    },
+    "Video": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
+    "Hintergrund": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

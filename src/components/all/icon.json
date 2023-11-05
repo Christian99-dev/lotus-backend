@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_all_icons",
+  "info": {
+    "displayName": "icon",
+    "icon": "",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "iconID": {
+      "type": "enumeration",
+      "enum": [
+        "time",
+        "mail",
+        "phone",
+        "wrench",
+        "sync",
+        "drop",
+        "location",
+        "starFull",
+        "starHalf",
+        "starEmpty",
+        "facebook",
+        "instagram",
+        "whatsapp",
+        "close",
+        "menu",
+        "arrow",
+        "open",
+        "cash"
+      ],
+      "required": true
+    }
+  }
+}

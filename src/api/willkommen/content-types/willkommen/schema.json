@@ -1,0 +1,44 @@
+{
+  "kind": "singleType",
+  "collectionName": "willkommens",
+  "info": {
+    "singularName": "willkommen",
+    "pluralName": "willkommens",
+    "displayName": "Willkommen",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Hintergrund": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Titel": {
+      "type": "component",
+      "repeatable": false,
+      "component": "all.global",
+      "required": true
+    },
+    "Untertitel": {
+      "type": "component",
+      "repeatable": false,
+      "component": "all.global",
+      "required": true
+    },
+    "HintergrundMobile": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

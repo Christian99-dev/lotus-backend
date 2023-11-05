@@ -1,0 +1,74 @@
+{
+  "kind": "singleType",
+  "collectionName": "kontakts",
+  "info": {
+    "singularName": "kontakt",
+    "pluralName": "kontakts",
+    "displayName": "Kontakt",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Ueberschrift": {
+      "type": "string",
+      "required": true
+    },
+    "SubUeberschrift": {
+      "type": "string",
+      "required": true
+    },
+    "VornamePlatzhalter": {
+      "type": "string",
+      "required": true
+    },
+    "NachnamePlatzhalter": {
+      "type": "string",
+      "required": true
+    },
+    "NachrichtPlatzhalter": {
+      "type": "string",
+      "required": true
+    },
+    "EmailPlatzhalter": {
+      "type": "string",
+      "required": true
+    },
+    "NummerPlatzhalter": {
+      "type": "string",
+      "required": true
+    },
+    "StrasseHausnummerPlatzhalter": {
+      "type": "string",
+      "required": true
+    },
+    "PlzOrtPlatzhalter": {
+      "type": "string",
+      "required": true
+    },
+    "Button": {
+      "type": "string",
+      "required": true
+    },
+    "Hintergrund": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "InformationsZeilen": {
+      "type": "component",
+      "repeatable": true,
+      "component": "all.global-and-icon",
+      "required": true
+    },
+    "GoogleMapsLocation": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_all_people",
+  "info": {
+    "displayName": "Person"
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Berufsbezeichnung": {
+      "type": "string",
+      "required": true
+    },
+    "Beschreibung": {
+      "type": "text",
+      "required": true
+    },
+    "Bild": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "teams",
+  "info": {
+    "singularName": "team",
+    "pluralName": "teams",
+    "displayName": "Team"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Ueberschrift": {
+      "type": "string",
+      "required": true
+    },
+    "Personen": {
+      "type": "component",
+      "repeatable": true,
+      "component": "all.person",
+      "required": true,
+      "max": 2
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_all_globals",
+  "info": {
+    "displayName": "Global",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "globalID": {
+      "type": "enumeration",
+      "enum": [
+        "Name",
+        "Nummer",
+        "Oeffnungszeiten",
+        "PlzOrt",
+        "StrasseHausnummer",
+        "VolleAdresse",
+        "Email",
+        "WhatsappLink"
+      ],
+      "required": true
+    }
+  }
+}

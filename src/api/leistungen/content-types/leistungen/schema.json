@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "leistungens",
+  "info": {
+    "singularName": "leistungen",
+    "pluralName": "leistungens",
+    "displayName": "Leistungen"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Ueberschrift": {
+      "type": "string",
+      "required": true
+    },
+    "Leistungen": {
+      "type": "component",
+      "repeatable": true,
+      "component": "all.leistung",
+      "required": true
+    }
+  }
+}

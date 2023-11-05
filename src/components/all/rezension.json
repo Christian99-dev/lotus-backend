@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_all_rezensions",
+  "info": {
+    "displayName": "Rezension"
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Text": {
+      "type": "text",
+      "required": true
+    },
+    "Bewertung": {
+      "type": "decimal",
+      "required": true
+    },
+    "Bild": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

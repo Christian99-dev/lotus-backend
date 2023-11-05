@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "agbs",
+  "info": {
+    "singularName": "agb",
+    "pluralName": "agbs",
+    "displayName": "AGB"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Ueberschrift": {
+      "type": "string",
+      "required": true
+    },
+    "AGB": {
+      "type": "text",
+      "required": true
+    }
+  }
+}
