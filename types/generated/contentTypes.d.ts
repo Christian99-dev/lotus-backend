@@ -830,7 +830,6 @@ export interface ApiGlobalGlobal extends Schema.SingleType {
     Logo: Attribute.Media & Attribute.Required;
     LogoOhneText: Attribute.Media & Attribute.Required;
     WhatsappQRCode: Attribute.Media & Attribute.Required;
-    favicon: Attribute.Media & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
