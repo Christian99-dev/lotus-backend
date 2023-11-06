@@ -905,7 +905,7 @@ export interface ApiKontaktKontakt extends Schema.SingleType {
     Hintergrund: Attribute.Media & Attribute.Required;
     InformationsZeilen: Attribute.Component<'all.global-and-icon', true> &
       Attribute.Required;
-    GoogleMapsLocation: Attribute.String & Attribute.Required;
+    GoogleMapsLink: Attribute.String & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

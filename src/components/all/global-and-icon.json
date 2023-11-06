@@ -1,11 +1,12 @@
 {
   "collectionName": "components_all_global_and_icons",
   "info": {
-    "displayName": "GlobalAndIcon"
+    "displayName": "GlobalAndIcon",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "Gobal": {
+    "Global": {
       "type": "component",
       "repeatable": false,
       "component": "all.global",

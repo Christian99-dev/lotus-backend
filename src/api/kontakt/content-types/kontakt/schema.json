@@ -66,7 +66,7 @@
       "component": "all.global-and-icon",
       "required": true
     },
-    "GoogleMapsLocation": {
+    "GoogleMapsLink": {
       "type": "string",
       "required": true
     }

@@ -4,9 +4,10 @@ export interface AllGlobalAndIcon extends Schema.Component {
   collectionName: 'components_all_global_and_icons';
   info: {
     displayName: 'GlobalAndIcon';
+    description: '';
   };
   attributes: {
-    Gobal: Attribute.Component<'all.global'> & Attribute.Required;
+    Global: Attribute.Component<'all.global'> & Attribute.Required;
     Icon: Attribute.Component<'all.icon'> & Attribute.Required;
   };
 }
