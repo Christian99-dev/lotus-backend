@@ -111,6 +111,17 @@ export interface AllRezension extends Schema.Component {
   };
 }
 
+export interface AllSeite extends Schema.Component {
+  collectionName: 'components_all_seites';
+  info: {
+    displayName: 'Seite';
+  };
+  attributes: {
+    SeitenTitel: Attribute.String & Attribute.Required;
+    SeitenBeschreibung: Attribute.Text & Attribute.Required;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
@@ -120,6 +131,7 @@ declare module '@strapi/types' {
       'all.leistung': AllLeistung;
       'all.person': AllPerson;
       'all.rezension': AllRezension;
+      'all.seite': AllSeite;
     }
   }
 }

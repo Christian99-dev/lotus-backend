@@ -733,6 +733,80 @@ export interface ApiFooterFooter extends Schema.SingleType {
   };
 }
 
+export interface ApiFormularAusgangsMailFormularAusgangsMail
+  extends Schema.SingleType {
+  collectionName: 'formular_ausgangs_mails';
+  info: {
+    singularName: 'formular-ausgangs-mail';
+    pluralName: 'formular-ausgangs-mails';
+    displayName: 'FormularAusgangsMail';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Betreff: Attribute.String & Attribute.Required;
+    NachrichtenFormat: Attribute.Text & Attribute.Required;
+    Empfaenger: Attribute.String & Attribute.Required;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::formular-ausgangs-mail.formular-ausgangs-mail',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::formular-ausgangs-mail.formular-ausgangs-mail',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiFormularPopupsFormularPopups extends Schema.SingleType {
+  collectionName: 'formular_popupss';
+  info: {
+    singularName: 'formular-popups';
+    pluralName: 'formular-popupss';
+    displayName: 'FormularPopups';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    VornamePopup: Attribute.String & Attribute.Required;
+    NachnamePopup: Attribute.String & Attribute.Required;
+    NachrichtPopup: Attribute.String & Attribute.Required;
+    EmailPopup: Attribute.String & Attribute.Required;
+    TelefonnummerPopup: Attribute.String & Attribute.Required;
+    StrasseHausnummerPopup: Attribute.String & Attribute.Required;
+    PlzOrtPopup: Attribute.String & Attribute.Required;
+    BitteWartenPopup: Attribute.String & Attribute.Required;
+    NachrichtAbgeschicktPopup: Attribute.String & Attribute.Required;
+    FehlerPopup: Attribute.String & Attribute.Required;
+    EmailUngueltigPopup: Attribute.String & Attribute.Required;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::formular-popups.formular-popups',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::formular-popups.formular-popups',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiGlobalGlobal extends Schema.SingleType {
   collectionName: 'globals';
   info: {
@@ -978,6 +1052,34 @@ export interface ApiRezensionenRezensionen extends Schema.SingleType {
   };
 }
 
+export interface ApiSeoSeo extends Schema.SingleType {
+  collectionName: 'seos';
+  info: {
+    singularName: 'seo';
+    pluralName: 'seos';
+    displayName: 'SEO';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    favicon: Attribute.Media & Attribute.Required;
+    WebseitenUrl: Attribute.String & Attribute.Required;
+    WebseitenTitel: Attribute.String & Attribute.Required;
+    Homepage: Attribute.Component<'all.seite'> & Attribute.Required;
+    ImpressumUndDatenschutz: Attribute.Component<'all.seite'> &
+      Attribute.Required;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<'api::seo.seo', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<'api::seo.seo', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+  };
+}
+
 export interface ApiTeamTeam extends Schema.SingleType {
   collectionName: 'teams';
   info: {
@@ -1057,6 +1159,8 @@ declare module '@strapi/types' {
       'plugin::i18n.locale': PluginI18NLocale;
       'api::agb.agb': ApiAgbAgb;
       'api::footer.footer': ApiFooterFooter;
+      'api::formular-ausgangs-mail.formular-ausgangs-mail': ApiFormularAusgangsMailFormularAusgangsMail;
+      'api::formular-popups.formular-popups': ApiFormularPopupsFormularPopups;
       'api::global.global': ApiGlobalGlobal;
       'api::header.header': ApiHeaderHeader;
       'api::kontakt.kontakt': ApiKontaktKontakt;
@@ -1064,6 +1168,7 @@ declare module '@strapi/types' {
       'api::philosophie.philosophie': ApiPhilosophiePhilosophie;
       'api::rechtliches.rechtliches': ApiRechtlichesRechtliches;
       'api::rezensionen.rezensionen': ApiRezensionenRezensionen;
+      'api::seo.seo': ApiSeoSeo;
       'api::team.team': ApiTeamTeam;
       'api::willkommen.willkommen': ApiWillkommenWillkommen;
     }
