@@ -930,6 +930,7 @@ export interface ApiLeistungenLeistungen extends Schema.SingleType {
     singularName: 'leistungen';
     pluralName: 'leistungens';
     displayName: 'Leistungen';
+    description: '';
   };
   options: {
     draftAndPublish: true;

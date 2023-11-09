@@ -81,7 +81,6 @@ export interface AllLeistung extends Schema.Component {
     Text: Attribute.Text & Attribute.Required;
     Untertitel: Attribute.String;
     TextVorschau: Attribute.Text & Attribute.Required;
-    Video: Attribute.Media;
     Hintergrund: Attribute.Media;
   };
 }
