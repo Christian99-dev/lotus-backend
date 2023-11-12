@@ -1070,6 +1070,7 @@ export interface ApiSeoSeo extends Schema.SingleType {
     Homepage: Attribute.Component<'all.seite'> & Attribute.Required;
     ImpressumUndDatenschutz: Attribute.Component<'all.seite'> &
       Attribute.Required;
+    Agb: Attribute.Component<'all.seite'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

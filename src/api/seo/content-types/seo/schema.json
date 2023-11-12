@@ -39,6 +39,11 @@
       "repeatable": false,
       "component": "all.seite",
       "required": true
+    },
+    "Agb": {
+      "type": "component",
+      "repeatable": false,
+      "component": "all.seite"
     }
   }
 }
