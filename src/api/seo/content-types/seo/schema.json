@@ -44,6 +44,14 @@
       "type": "component",
       "repeatable": false,
       "component": "all.seite"
+    },
+    "robots_txt": {
+      "type": "richtext",
+      "required": true
+    },
+    "sitemap_xml": {
+      "type": "richtext",
+      "required": true
     }
   }
 }

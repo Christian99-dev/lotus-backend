@@ -1071,6 +1071,8 @@ export interface ApiSeoSeo extends Schema.SingleType {
     ImpressumUndDatenschutz: Attribute.Component<'all.seite'> &
       Attribute.Required;
     Agb: Attribute.Component<'all.seite'>;
+    robots_txt: Attribute.RichText & Attribute.Required;
+    sitemap_xml: Attribute.RichText & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
